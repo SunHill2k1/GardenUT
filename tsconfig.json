@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "strict": true,
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": false,
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "sourceMap": false,
+    "allowSyntheticDefaultImports": true,
+    // Babel
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+    "typeRoots": [
+      "node_modules/@types",
+      "src/Globals.d.ts",
+      "src/Globals-module.d.ts",
+      "src/popper.d.ts",
+      "tippy.d.ts"
+    ],
+    // MUI
+    "lib": ["es6", "dom"],
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.scss",
+    "./src/Globals.d.ts",
+    "src/**/*.png",
+    "src/**/*.js"
+  ],
+  "exclude": ["node_modules"]
+}

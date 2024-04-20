@@ -1,0 +1,46 @@
+.shipper-map {
+  position: relative;
+  padding-top: 80px;
+  height: 100vh;
+}
+
+.map {
+  width: 100vw;
+  height: 75vh;
+}
+
+.delivery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 160px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.2);
+  &:after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background: rgb(200, 200, 200);
+    border-radius: 2px;
+  }
+}
+
+.name,
+.phone{
+  font-size: 20px;
+  & i{
+    color: var(--primary-color);
+    margin-right: 10px;
+  }
+}

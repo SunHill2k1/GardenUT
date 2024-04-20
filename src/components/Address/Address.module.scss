@@ -1,0 +1,35 @@
+///////////////////////////ADDRESS
+.address {
+  &-default {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    margin-bottom: 10px;
+    &_name {
+      text-transform: uppercase;
+      border-right: 1px solid var(--gray-color);
+      padding-right: 10px;
+    }
+    &_phone {
+      padding-left: 10px;
+    }
+    &_address {
+      color: var(--gray-color);
+    }
+    .btn-change {
+      text-transform: uppercase;
+      background: rgb(220, 220, 220);
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+  &-form {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

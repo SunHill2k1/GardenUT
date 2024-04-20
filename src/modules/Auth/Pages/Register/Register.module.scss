@@ -1,0 +1,94 @@
+.register {
+  position: relative;
+  height: 100vh;
+}
+.left {
+  img {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    height: 400px;
+    width: 300px;
+    z-index: 99;
+  }
+  div {
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    top: 0;
+    left: 10%;
+    z-index: 2;
+    background: var(--primary-linear-color);
+    opacity: 0.8;
+  }
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 500;
+}
+.content {
+  margin-bottom: 20px;
+  .login-btn {
+    color: var(--primary-color);
+    padding-left: 5px;
+  }
+}
+
+.register-form {
+  min-width: 350px;
+}
+
+.input-field {
+  // margin-top: 20px;
+  width: 100%;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+  border-radius: 4px;
+  color: var(--white-color);
+  background: var(--primary-linear-color);
+  transition: all 0.3s;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+.confirm-btn {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+  border-radius: 4px;
+  color: var(--white-color);
+  background: var(--primary-linear-color);
+  transition: all 0.3s;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+  .left {
+    display: none;
+  }
+  .container {
+    margin-left: 0;
+  }
+}

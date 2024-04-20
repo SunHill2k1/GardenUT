@@ -1,0 +1,38 @@
+.modal-item{
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    gap: 20px;
+    overflow:hidden;
+}
+.image-item{
+    border-radius: 10px;
+}
+.detail{
+    flex: 1;
+    .title{
+        font-size: 26px;
+        font-weight: 500;
+    }
+    .price{
+        font-size: 24px;
+        color: var(--primary-color);
+        font-weight: 600;
+        margin: 10px 0;
+    }
+    .desc{
+        font-size: 14px;
+        color: var(--gray-color);
+    }
+}
+.quantity{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.add-to-cart{
+    margin: 10px 0;
+    border-radius: 20px;
+}

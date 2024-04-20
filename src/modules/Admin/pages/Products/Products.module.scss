@@ -1,0 +1,9 @@
+.create-btn {
+  background-color: var(--primary-linear-color);
+  color: var(--white-color);
+  transition: all 0.3s linear;
+  &:hover {
+    opacity: 0.8;
+  }
+  margin-bottom: 16px;
+}

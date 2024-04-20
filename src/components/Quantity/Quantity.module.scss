@@ -1,0 +1,33 @@
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+.quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    overflow: hidden;
+    margin: 10px 0;
+    background-color: var(--background-color);
+
+    button{
+        font-size: 18px;
+        height: 100%;
+        padding: 5px;
+        background-color: var(--background-color);
+        cursor: pointer;
+    }
+    input{
+        font-size: 16px;
+        padding: 5px 0;
+        width: 40px;
+        height: 100%;
+        text-align: center;
+        background-color: var(--background-color);
+    }
+}
+

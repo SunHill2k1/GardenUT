@@ -1,0 +1,63 @@
+.card {
+  position: relative;
+  width: 100%;
+  // height: 150px;
+
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  gap: 10px;
+
+  transition: 0.3s ease-in;
+  &:hover {
+    scale: 1.05;
+    box-shadow: var(--box-shadow);
+  }
+  & i{
+    color: var(--primary-color);
+  }
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  font-size: 35px;
+}
+.content {
+  .code {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .info-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    i {
+      color: var(--primary-color);
+    }
+  }
+  .order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .price {
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+  }
+  .km {
+    font-weight: 600;
+  }
+  .address {
+    i {
+      color: var(--primary-color);
+    }
+  }
+  .order {
+    font-weight: 600;
+  }
+}
+.ship-cost {
+  text-align: right;
+}
